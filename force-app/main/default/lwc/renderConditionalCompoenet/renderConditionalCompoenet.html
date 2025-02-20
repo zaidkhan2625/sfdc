@@ -1,0 +1,13 @@
+<template>
+    <lightning-button variant="brand" label="Brand" title="Primary action" onclick={handleClick} class="slds-m-left_x-small"></lightning-button>
+        
+      <template if:true={visiable}>
+        <lightning-card  title="Hello">
+            <lightning-button label="New" slot="actions"></lightning-button>
+            <p class="slds-p-horizontal_small">Card Body (custom component)</p>
+            <p slot="footer">Card Footer</p>
+        </lightning-card>
+        <h1>hello zaid</h1>
+      </template>
+      <c-component-list-design visiable={visiable}></c-component-list-design>
+    </template>
